@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage>with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     Future<EffectedPatients> getStatesData() async {
       final responce =
-      await http.get(Uri.parse('https://disease.sh/v3/covid-19/all'));
+      await http.get(Uri.parse('your Api Key'));
 
       if (responce.statusCode == 200) {
         var data = jsonDecode(responce.body);
