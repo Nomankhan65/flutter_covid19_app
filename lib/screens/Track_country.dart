@@ -16,7 +16,7 @@ class _TrackCountryState extends State<TrackCountry> {
   TextEditingController  controller=TextEditingController();
   Future<List<dynamic>> getCountry()async{
     var data;
-    final responce=await http.get(Uri.parse('https://disease.sh/v3/covid-19/countries'));
+    final responce=await http.get(Uri.parse('Api Key'));
     if(responce.statusCode==200)
     {
       data=jsonDecode(responce.body.toString());
